@@ -53,6 +53,20 @@ class TestTV:
         self.tv1 = TV()
         self.tv2 = TV()
 
-#input channel
-#input volume 
+#user input channel and volume 
+    def run_test(self):
+        # Input for TV1
+        channel1 = int(input("Enter channel for TV1 (1-30): "))
+        volume1 = int(input("Enter volume for TV1 (1-100): "))
+        self.tv1.set_channel(channel1)
+        self.tv1.set_volume(volume1)
+
+        # Input for TV2
+        channel2 = int(input("Enter channel for TV2 (1-30): "))
+        volume2 = int(input("Enter volume for TV2 (1-100): "))
+        self.tv2.set_channel(channel2)
+        self.tv2.set_volume(volume2)
+
+
 #output channel and volume
+# Define TV class
