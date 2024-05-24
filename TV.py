@@ -67,6 +67,10 @@ class TestTV:
         self.tv2.set_channel(channel2)
         self.tv2.set_volume(volume2)
 
+        # Output the channel and volume for both TVs
+        print(f"TV1's channel is {self.tv1.get_channel()} and volume level is {self.tv1.get_volume()}")
+        print(f"TV2's channel is {self.tv2.get_channel()} and volume level is {self.tv2.get_volume()}")
 
-#output channel and volume
-# Define TV class
+# Create an instance of TestTV and run the test
+test = TestTV()
+test.run_test()
