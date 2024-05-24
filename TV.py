@@ -47,7 +47,12 @@ class TV:
         if self._volume > 1:
             self._volume -= 1
 
-#define TV test class
+# Define TestTV class
+class TestTV:
+    def __init__(self):
+        self.tv1 = TV()
+        self.tv2 = TV()
+
 #input channel
 #input volume 
 #output channel and volume
